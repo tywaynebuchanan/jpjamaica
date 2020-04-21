@@ -8,16 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Justice of The Peace</title>
-
-   
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  
     <link href="css/blog-home.css" rel="stylesheet">
 
-   
 
 </head>
 
