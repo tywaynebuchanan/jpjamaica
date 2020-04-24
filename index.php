@@ -9,141 +9,128 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Justice of The Peace</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/blog-home.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/landing.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Justice of the Peace</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="index.php">Justice of the Peace</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php"> Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Parishes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Kingston</a>
+          <a class="dropdown-item" href="#">St Andrew</a>
+          <a class="dropdown-item active" href="landing.php">St Catherine</a>
+          <a class="dropdown-item" href="#">Clarendon</a>
+          <a class="dropdown-item" href="#">Manchester</a>
+          <a class="dropdown-item" href="#">St Elizabeth</a>
+          <a class="dropdown-item" href="#">Portland</a>
+          <a class="dropdown-item" href="#">St James</a>
+          <a class="dropdown-item" href="#">Trelwany</a>
+          <a class="dropdown-item" href="#">St Ann</a>
+          <a class="dropdown-item" href="#">St Mary</a>
+          <a class="dropdown-item" href="#">St Thomas</a>
+          <a class="dropdown-item" href="#">Westmoreland</a>
+          <a class="dropdown-item" href="#">Hanover</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      
+      
+    </ul>
     
+  </div>
+</nav>
+     
 
-          
-
-                <!-- Blog Categories Well -->
-                <div class = "container">
-                <div class="well">
-                    <h4>Parishes</h4>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <ul class="list-unstyled">
-                                <li><a href="landing.php">St Catherine</a>
-                                </li>
-                                <li><a href="#">Kingston</a>
-                                </li>
-                                <li><a href="#">St Andrew</a>
-                                </li>
-                                <li><a href="#">St Thomas</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.col-lg-6 -->
-                        <div class="col-lg-3">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Portland</a>
-                                </li>
-                                <li><a href="#">St Mary</a>
-                                </li>
-                                <li><a href="#">St Ann</a>
-                                </li>
-                                <li><a href="#">Trelawny</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.col-lg-6 -->
-
-                         <div class="col-lg-3">
-                            <ul class="list-unstyled">
-                                <li><a href="#">St James</a>
-                                </li>
-                                <li><a href="#">Hanover</a>
-                                </li>
-                                <li><a href="#">Westmoreland</a>
-                                </li>
-                                <li><a href="#">St Elizabeth</a>
-                                </li>
-                            </ul>
-                        </div>
-                    
-                    <!-- /.row -->
+<div class="container">
+<div class="jumbotron text-light bg-primary">
+  <h1 class="display-4">Justice of The Peaces</h1>
+  <p class="lead">This is a simple website that helps you to search for a Justice of the peace in Jamaica. </p>
+  <p>Currently, the only listing available is the parish of St Catherine</p>
+</div>
+</div>
 
 
-                    <div class="col-lg-3">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Mandeville</a>
-                                </li>
-                                <li><a href="#">Clarendon</a>
-                                </li>
-                                <li><a href="#">St Catherine</a>
-                                </li>
-                                
-                            </ul>
-                        </div>
+    <div class="space">          
+    <div class="container">
+            <div class="row">
+                
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <a class="list-group-item"href="landing.php">St Catherine</a>
+                            <a class="list-group-item"href="#">Kingston</a>
+                            <a class="list-group-item"href="#">St Andrew</a>
+                            <a class="list-group-item"href="#">St Thomas</a>
+                            <a class="list-group-item"href="#">St James</a>
+                            <a class="list-group-item"href="#">Westmoreland</a>
+                        </ul>
+                    </div>
                 </div>
+                
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <a class="list-group-item"href="#">Portland</a>
+                            <a class="list-group-item"href="#">St Mary</a>
+                            <a class="list-group-item"href="#">St Ann</a>
+                            <a class="list-group-item"href="#">Trelawny</a>
+                            <a class="list-group-item"href="#">St Elizabeth</a>
+                         </ul>
+                    </div>
                 </div>
 
-                <!-- Side Widget Well -->
-               
-
-            </div>
-
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <a class="list-group-item" href="#">Mandeville</a>
+                            <a class="list-group-item"href="#">Clarendon</a>
+                            <a class="list-group-item active"href="#">St Catherine</a> 
+                            <a class="list-group-item"href="#">Hanover</a>
+                        </ul>
+                    </div>
+                </div>
         </div>
-        <!-- /.row -->
+    </div>
+</div>
 
-        <hr>
 
-        <!-- Footer -->
-        <footer class="container text-center">
+
+<hr>
+<div class="container">
+        <footer class="text-center">
             <div class="row">
                 <div class="col-lg-12">
                     <p>Copyright &copy; MJGA 2020</p>
                 </div>
-                <!-- /.col-lg-12 -->
             </div>
-            <!-- /.row -->
-        </footer>
+     </footer>
+</div>
+   
 
-    </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 
 </body>
 

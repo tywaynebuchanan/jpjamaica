@@ -15,41 +15,58 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Justice of The Peace</title>
-    <link rel="stylesheet" type="text/css" href="css/landing.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/blog-home.css" rel="stylesheet">
+    
+     <link rel="stylesheet" type="text/css" href="css/landing.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Justice of the Peace</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="index.php">Justice of the Peace</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php"> Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Parishes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Kingston</a>
+          <a class="dropdown-item" href="#">St Andrew</a>
+          <a class="dropdown-item" href="landing.php">St Catherine</a>
+          <a class="dropdown-item" href="#">Clarendon</a>
+          <a class="dropdown-item" href="#">Manchester</a>
+          <a class="dropdown-item" href="#">St Elizabeth</a>
+          <a class="dropdown-item" href="#">Portland</a>
+          <a class="dropdown-item" href="#">St James</a>
+          <a class="dropdown-item" href="#">Trelwany</a>
+          <a class="dropdown-item" href="#">St Ann</a>
+          <a class="dropdown-item" href="#">St Mary</a>
+          <a class="dropdown-item" href="#">St Thomas</a>
+          <a class="dropdown-item" href="#">Westmoreland</a>
+          <a class="dropdown-item" href="#">Hanover</a>
         </div>
-    </nav>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
 
 
 
-<div class="container">
+
+<div class="container space">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -60,11 +77,8 @@
 
 
 
-<div class="container">
-
-
+<div class="container space">
   <div class="container text-center">
-    
         <a href="#"><h1 class="text-center">Search for a Justice of the Peace</h1></a> 
           <form action="landing.php" method = "get">
             <div class="form-group">
@@ -72,7 +86,9 @@
               <input type="text" name = "keyword" class="form-control"></input>
           </div>
        
-            <input class = "btn btn-primary"type="submit" name="submit" value = "Search" onclick="showTable()">
+            <input class = "btn btn-primary space"type="submit" name="submit" value = "Search" onclick="showTable()">
+            <input class="btn btn-primary" type="button" value="Reset"  
+            onclick="window.location = 'landing.php'" />
         </form>
     </div>
   </div>
@@ -80,10 +96,10 @@
 
 
 
-<div class="container ">
 
+<div class="container">
       <table class="table" id="table" >
-        <thead>
+        <thead class="thead-light">
           <tr>
             <th>Last Name</th>
             <th>First Name</th>
@@ -92,19 +108,24 @@
             <th>Phone Number</th>
           </tr>
         </thead>
-
-        <tbody>
-       
        <?php SearchDB(); ?>
-
-        </tbody>
       </table>
     </div>
-  </div>
 
 
 
 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
+
+<footer class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; MJGA 2020</p>
+                </div>
+            </div>
+        </footer>
 </html>

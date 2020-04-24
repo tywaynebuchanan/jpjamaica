@@ -3,6 +3,7 @@
 
 function SearchDB(){
 	global $conn;
+	global $error;
 if (isset($_GET['submit'])){
 			$conn = new mysqli('localhost', 'root', '', 'listing');
 			$q = $conn->real_escape_string($_GET['keyword']);
@@ -11,13 +12,31 @@ if (isset($_GET['submit'])){
 			
 			if ($sql->num_rows > 0) {
 				while ($row = $sql->fetch_assoc())
-					echo "<tr><td><a href ="">" . $row["LastName"] . "</a></td><td><a>"
-						. $row["FirstName"]. "</td><td>".$row["Address"]. "</td><td>". $row["City"]."</td><td>". $row["PhoneNumber"]."</td></tr>";
-					echo "</table>";
-					echo $rows = mysqli_num_rows($sql);
+				
+
+
+				echo "<tr>";
+				echo "<td>";
+				echo "$row["LastName"]";
+				echo "</td>";
+				echo "<td>";
+				echo "$row["FirstName"]";
+				echo "</td>";
+				echo "<td>";
+				echo "$row["Address"]";
+				echo "</td>";
+				echo "<td>";
+				echo "$row["City"]";
+				echo "</td>";
+				echo "<td>";
+				echo "$row["PhoneNumber"]";
+				echo "</td>";
+				echo "</tr>";
+					
+				
 			}else{
 				
-				echo ' There is no Justice of the Peace by the name of '.($_GET['keyword']);}
+				echo "There is no Justice of the Peace by the name of".($_GET['keyword']);}
 
 			}
 
