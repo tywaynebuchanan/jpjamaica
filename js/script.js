@@ -34,7 +34,7 @@ function Errorbtn(){
 }else {
 
 	
-	window.open('index.php');
+	window.open('landing.php');
 
 
 	
