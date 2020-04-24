@@ -25,7 +25,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php"> Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -34,7 +34,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Kingston</a>
           <a class="dropdown-item" href="#">St Andrew</a>
-          <a class="dropdown-item active" href="landing.php">St Catherine</a>
+          <a class="dropdown-item active" href="stcatherine.php">St Catherine</a>
           <a class="dropdown-item" href="#">Clarendon</a>
           <a class="dropdown-item" href="#">Manchester</a>
           <a class="dropdown-item" href="#">St Elizabeth</a>
@@ -59,9 +59,9 @@
 </nav>
      
 
-<div class="container">
+<div class="container space">
 <div class="jumbotron text-light bg-primary">
-  <h1 class="display-4">Justice of The Peaces</h1>
+  <h1 class="display-4">Justice of the Peace</h1>
   <p class="lead">This is a simple website that helps you to search for a Justice of the peace in Jamaica. </p>
   <p>Currently, the only listing available is the parish of St Catherine</p>
 </div>
@@ -75,7 +75,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <ul class="list-group list-group-flush">
-                            <a class="list-group-item"href="landing.php">St Catherine</a>
+                            <a class="list-group-item active"href="stcatherine.php">St Catherine</a>
                             <a class="list-group-item"href="#">Kingston</a>
                             <a class="list-group-item"href="#">St Andrew</a>
                             <a class="list-group-item"href="#">St Thomas</a>
@@ -102,7 +102,6 @@
                         <ul class="list-group list-group-flush">
                             <a class="list-group-item" href="#">Mandeville</a>
                             <a class="list-group-item"href="#">Clarendon</a>
-                            <a class="list-group-item active"href="#">St Catherine</a> 
                             <a class="list-group-item"href="#">Hanover</a>
                         </ul>
                     </div>

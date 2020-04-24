@@ -12,9 +12,6 @@ if (isset($_GET['submit'])){
 			
 			if ($sql->num_rows > 0) {
 				while ($row = $sql->fetch_assoc())
-				
-
-
 				echo "<tr>";
 				echo "<td>";
 				echo "$row["LastName"]";

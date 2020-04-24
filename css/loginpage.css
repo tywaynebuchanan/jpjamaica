@@ -1,0 +1,24 @@
+body {
+
+background: #4286f4
+  
+}
+
+.center{
+
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  width: 40%;
+}
+
+.space{
+
+	padding-top: 10px;
+}
+
+.error-hide{
+
+	display: none;
+}

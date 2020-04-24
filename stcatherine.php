@@ -43,7 +43,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Kingston</a>
           <a class="dropdown-item" href="#">St Andrew</a>
-          <a class="dropdown-item" href="landing.php">St Catherine</a>
+          <a class="dropdown-item active" href="stcatherine.php">St Catherine</a>
           <a class="dropdown-item" href="#">Clarendon</a>
           <a class="dropdown-item" href="#">Manchester</a>
           <a class="dropdown-item" href="#">St Elizabeth</a>
@@ -79,16 +79,18 @@
 
 <div class="container space">
   <div class="container text-center">
-        <a href="#"><h1 class="text-center">Search for a Justice of the Peace</h1></a> 
-          <form action="landing.php" method = "get">
+        <h1 class="text-center">Search for a Justice of the Peace</h1>
+          <form action="stcatherine.php" method = "get">
             <div class="form-group">
               <label for = "keyword">Enter the Last Name of the Justice of the Peace</label>
               <input type="text" name = "keyword" class="form-control"></input>
           </div>
        
-            <input class = "btn btn-primary space"type="submit" name="submit" value = "Search" onclick="showTable()">
+            <input class = "btn btn-primary space"type="submit" name="submit" value = "Search" 
+            >
             <input class="btn btn-primary" type="button" value="Reset"  
-            onclick="window.location = 'landing.php'" />
+            onclick="window.location = 'stcatherine.php'" />
+            
         </form>
     </div>
   </div>
